@@ -1,0 +1,33 @@
+public static void main(String[] args){
+         //pre defined computation
+         
+         System.out.println(Fibbonacci(10));
+         
+     }
+    public static int Fibbonacci(int value){
+        
+       
+        int A[] = new int[10]; 
+        int total;
+        int j = 0;
+        
+        A[0] = 0;
+        A[1] = 1;
+        A[2] = A[0] + A[1];
+        A[3] = A[1] + A[2];
+        A[4] = A[2] + A[3];
+        A[5] = A[3] + A[4];
+        A[6] = A[4] + A[5];
+        A[7] = A[5] + A[6];
+        A[8] = A[6] + A[7];
+        A[9] = A[7] + A[8];
+        
+        for (int i = 0; i < value - 1;i++) {
+            
+            System.out.println(A[i]);
+            total = A[i] + j;
+            j = total;   
+            
+        }
+         return j;
+    }

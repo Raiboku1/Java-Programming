@@ -1,0 +1,50 @@
+public class Linklist_1 {
+    
+    Link Link1, prev = null;
+
+    public Linklist_1() {
+    }
+
+    void Insert(String Name, int StudentNo, String course, String Address, String Email) {
+        Link newlink = new Link(Name, StudentNo, course, Address, Email);
+        newlink.Next = Link1;
+        Link1 = newlink;
+    }
+    void Display() {
+        Link link2 = Link1;
+        while(link2 != null){
+            System.out.println(link2.StudentNo+", "+link2.Name+", "+link2.course+", "+link2.Address+", "+link2.Email);
+            link2 = link2.Next;
+        }
+    }
+    void Search() {
+        Link link3 = Link1;
+        while(link3 != null){
+            System.out.println("The Data Exist.");
+                while(link3 == null){
+                    System.out.println("The Data doesn't Exist.");
+                }
+                    link3 = link3.Next;
+        }
+    }
+    void Update(String Name, int StudentNo, String course, String Address, String Email) {
+        Link link4 = new Link(Name, StudentNo, course, Address, Email);
+        link4.Next = Link1;
+        Link1 = link4;
+    }
+    void Delete() {
+        Link link5 = Link1;
+        Link next;
+        while(link5 != null){
+            System.out.println("Data Deleted.");
+            next = link5.Next;
+            free(link5);
+            link5 = next;
+        }
+        Link1 = null;
+    }
+
+    private void free(Link link5) {
+        Link1 = null;
+    }
+}

@@ -1,0 +1,11 @@
+public class BNode {
+    int A;
+    BNode Left;
+    BNode Right;
+    
+    public BNode(int A){
+        this.A = A;
+        Right = null;
+        Left = null;
+    }
+}

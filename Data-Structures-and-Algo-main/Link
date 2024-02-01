@@ -1,0 +1,20 @@
+public class Link {
+    
+     public Link(String Name, int StudentNo, String course, String Address, String Email) {
+        this.Name = Name;
+        this.StudentNo = StudentNo;
+        this.course = course;
+        this.Address = Address;
+        this.Email = Email;
+
+    }
+
+    String Name;
+    int StudentNo;
+    String Address;
+    String course;
+    String Email;
+    
+    Link Previous;
+    Link Next;
+}

@@ -1,0 +1,62 @@
+
+import java.util.Stack;
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ *
+import java.util.*;
+
+/**
+ *
+ * @author User
+ */
+public class LinkMain {
+    
+    public static void main(String[] args){
+       
+        Linklist_1 A = new Linklist_1();
+        Stack<String> STACK = new Stack<String>();
+        
+        System.out.println("School Year 2021 - 2022 Student List: ");
+        System.out.println(" ");
+        A.Insert("Crister D. Canitan", 1, "BSpE", "Colorado", "criscanitan@blah.com");
+        A.Insert("Monkey D. Luffy", 2, "Pirate", "East Blue", "Gomugomu@blah.com");
+        A.Insert("Mikey", 3, "Toman Leader", "Shibuya, Tokyo", "bokurosu@blah.com");
+        A.Insert("Draken", 4, "Toman Vice-Leader", "Shibuya Tokyo", "Draken123@blah.com");
+        A.Insert("Boruto Uzumaki", 5, "Ninja", "Konoha Village", "Momoshikixboruto@blah.com");
+        A.Display();
+        System.out.println(" ");
+        System.out.println("Searching if Data Exist...");
+        System.out.println(" ");
+        A.Search();
+        System.out.println(" ");
+        System.out.println("Updating Data...");
+        System.out.println(" ");
+        System.out.println("School Year 2021 - 2022 Student List: ");
+        System.out.println(" ");
+        A.Update("Uzumaki Naruto", 6, "Hokage", "Konoha Village", "IloveSasuke@blah.com");
+        A.Update("Kaido", 7, "Beast Pirate", "Wano Kuni", "Thunderbagua@blah.com");
+        A.Update("Rimuru Tempest", 8, "Demon Lord", "Jura Tempest Federation", "Leonkurosu@blah.com");
+        A.Display();
+        System.out.println(" ");
+        System.out.println("Deleting Data...");
+        System.out.println(" ");
+        A.Delete();
+        System.out.println(" ");
+        System.out.println("School Year 2021 - 2022 Student List: ");
+        System.out.println(" ");
+        A.Display();
+        STACK.push("Walay");
+        STACK.push("na");
+        STACK.push("Delete");
+        STACK.push("Kay");
+        STACK.push("naglibog");
+        STACK.push("Gihapon kos Algo");
+        STACK.push("WAHAHAHA");
+        System.out.println(STACK);
+        STACK.pop();
+        System.out.println(STACK);
+    }   
+}
